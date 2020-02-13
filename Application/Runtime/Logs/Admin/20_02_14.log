@@ -1,0 +1,30 @@
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/css/base.css
+ERR: 非法操作:css
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/common.js
+ERR: 非法操作:js
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/WdatePicker.js
+ERR: 非法操作:js
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/css/WdatePicker.css
+ERR: 非法操作:css
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/jquery.js
+ERR: 非法操作:js
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/css/info-mgt.css
+ERR: 非法操作:css
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/jquery.pagination.js
+ERR: 非法操作:js
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/common.js
+ERR: 非法操作:js
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/WdatePicker.js
+ERR: 非法操作:js
+
+[ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/jquery.pagination.js
+ERR: 非法操作:js
+

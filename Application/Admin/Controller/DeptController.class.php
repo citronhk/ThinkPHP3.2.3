@@ -4,6 +4,23 @@ use Think\Controller;
 class DeptController extends Controller{
 
 	public function show(){
+
+		$model = M('Dept');
+
+		// 查询数据
+		$data = $model-> order('sort asc')-> select();
+		// 获取顶级部门
+		foreach ($data as $key => $value) {
+			
+			if( $value['pid'] > 0){
+				// 查找上级部门
+				$info = $model->find($value['pid']);
+
+				$data[$key]['deptname'] = $info['name'];
+			}
+		}
+
+		$this->assign('data',$data);
 		$this->display();
 	}
 

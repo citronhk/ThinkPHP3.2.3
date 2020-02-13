@@ -3017,3 +3017,36 @@ ERR: syntax error, unexpected '，' (T_STRING), expecting ')'
 [ 2020-02-13T16:24:10+08:00 ] 127.0.0.1 /index.php/Admin/Dept/show.html
 ERR: 模板不存在:./Application/Admin/View/Dept/show.html
 
+[ 2020-02-13T22:39:28+08:00 ] 127.0.0.1 /index.php/Admin/Public/captcha
+ERR: Class 'Think\verify' not found
+
+[ 2020-02-13T22:40:12+08:00 ] 127.0.0.1 /index.php/Admin/Public/captcha
+ERR: Class 'Admin\Controller\Think\verify' not found
+
+[ 2020-02-13T22:41:28+08:00 ] 127.0.0.1 /index.php/Admin/Public/captcha
+ERR: Class 'Think\verify' not found
+
+[ 2020-02-13T22:42:17+08:00 ] 127.0.0.1 /index.php/Admin/Public/captcha
+ERR: Class 'Admin\Controller\Think\verify' not found
+
+[ 2020-02-13T22:48:31+08:00 ] 127.0.0.1 /index.php/Admin/Public
+ERR: 非法操作:index
+
+[ 2020-02-13T22:48:38+08:00 ] 127.0.0.1 /index.php/Admin/Public/login
+ERR: 模板不存在:./Application/Admin/View/Public/login.html
+
+[ 2020-02-13T22:51:40+08:00 ] 127.0.0.1 /index.php/Admin/Public/catpcha
+ERR: 非法操作:catpcha
+
+[ 2020-02-13T22:51:41+08:00 ] 127.0.0.1 /index.php/Admin/Public/catpcha
+ERR: 非法操作:catpcha
+
+[ 2020-02-13T22:51:42+08:00 ] 127.0.0.1 /index.php/Admin/Public/catpcha
+ERR: 非法操作:catpcha
+
+[ 2020-02-13T22:52:34+08:00 ] 127.0.0.1 /index.php/Admin/Public/catpcha
+ERR: 非法操作:catpcha
+
+[ 2020-02-13T23:16:55+08:00 ] 127.0.0.1 /index.php/Admin/Public/checkLogin.html?username=1&password=1&captcha=1
+ERR: 非法操作:checkLogin
+

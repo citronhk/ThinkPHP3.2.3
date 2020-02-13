@@ -20,7 +20,7 @@
 	        <div class="select-wrap">
 	        	<select name="pid">
 	                <option value="0">顶级部门</option>
-	                <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vol): $mod = ($i % 2 );++$i;?><option value='<?php echo ($vol["id"]); ?>'><?php echo ($vol["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	                <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vol): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vol["id"]); ?>"><?php echo ($vol["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 	            </select>
 	        </div>
 	    </div>
