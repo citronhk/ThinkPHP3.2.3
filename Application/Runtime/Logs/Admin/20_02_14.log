@@ -28,3 +28,9 @@ ERR: 非法操作:js
 [ 2020-02-14T00:19:04+08:00 ] 127.0.0.1 /index.php/Admin/Dept/js/jquery.pagination.js
 ERR: 非法操作:js
 
+[ 2020-02-14T14:24:19+08:00 ] 127.0.0.1 /index.php/Admin/Dept/Dept/edit/id/7
+ERR: 非法操作:Dept
+
+[ 2020-02-14T15:23:27+08:00 ] 127.0.0.1 /index.php/Admin/Dept/del/id/4
+ERR: 非法操作:del
+

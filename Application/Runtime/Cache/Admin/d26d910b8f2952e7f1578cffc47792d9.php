@@ -36,7 +36,10 @@
                 <td class="process"><?php if($vol["pid"] == 0): ?>顶级部门<?php else: echo ($vol["deptname"]); endif; ?></td>
                 <td class="node"><?php echo ($vol["sort"]); ?></td>
                 <td class="time"><?php echo ($vol["remark"]); ?></td>
-                <td class="operate"><a href="javascript:;">查看</a></td>
+                <td class="operate">
+                    <input type="checkbox" class="deptid" value="<?php echo ($vol["id"]); ?>">
+                    <a href="/index.php/Admin/Dept/edit/id/<?php echo ($vol["id"]); ?>">编辑</a>
+                </td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
@@ -69,5 +72,30 @@ $('.pagination').pagination(100,{
 $("tbody").find("tr:odd").css("backgroundColor","#eff6fa");
 
 showRemind('input[type=text], textarea','placeholder');
+
+$(function(){
+
+    // 删除按钮事件
+    $('.del').on('click',function(){
+
+        $obj = $(':checkbox:checked');  // 选中删除
+
+        $id = '';
+
+        for(i=0; i< $obj.length; i++){
+
+            $id += $obj[i].value + ',';
+        }   
+
+        $id = $id.substring(0,$id.length -1);
+
+        if($id == ''){
+            return;
+        }
+
+        window.location = "/index.php/Admin/Dept/del/id/"+$id;
+    });
+
+});
 </script>
 </html>

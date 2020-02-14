@@ -66,4 +66,62 @@ class DeptController extends Controller{
 			$this->display();
 		}
 	}
+
+	// 编辑功能
+	public function edit()
+	{
+
+		$model = M('Dept');
+
+		// 修改
+		if(IS_POST){
+			$post = I('post.');
+
+			$result = $model->save($post);
+
+			if($result !== false){
+
+				$this->success('修改成功',U('show'),3);
+			}else{
+
+				$this->error('修改失败！');
+			}
+		}else{
+
+			// 显示
+			$id = I('get.id');
+
+			$info = $model-> find($id);
+
+			if(!$info){
+
+				$this->error('该部门不存在');
+			}
+			// 查询除当前部门以外的所有部门
+			$data = $model-> where(' id != '.$id)-> select();
+
+			$this->assign('info', $info);
+			$this->assign('data', $data);
+			$this->display();
+		}
+
+	}
+
+	// 实现删除功能
+	public function del()
+	{
+		$id = I('get.id');
+
+		$model = M('Dept');
+
+		$result = $model->delete($id);
+
+		if($result){
+
+			$this->success('删除成功');
+		}else{
+
+			$this->error('删除失败');
+		}
+	}
 }
