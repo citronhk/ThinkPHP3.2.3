@@ -63,7 +63,7 @@
 </div>
 <div class="pagination ue-clear">
 	<div class="pagin-list">
-		<?php echo ($page); ?>
+		<?php echo ($show); ?>
 	</div>
 	<div class="pxofy">显示第 1 条到 10 条记录，总共<?php echo ($count); ?>条记录</div>
 </div>
